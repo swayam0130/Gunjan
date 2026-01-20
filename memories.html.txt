@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Memories</title>
+<style>
+    body {font-family: 'Poppins', sans-serif; background:#e6faff; margin:0; color:#24404d;}
+    nav {background:#fff; padding:15px; text-align:center; box-shadow:0 0 8px #9fd3e6;}
+    nav a {margin:0 15px; text-decoration:none; font-weight:600; color:#24404d;}
+    h2 {text-align:center; padding-top:30px;}
+    .dates {max-width:700px; margin:20px auto;}
+    .date-item {background:white; padding:15px; border-radius:10px; margin:12px 0; box-shadow:0 0 6px #9fd3e6;}
+
+    /* Slideshow styles */
+    .slideshow-container {max-width:600px; margin:40px auto; position:relative;}
+    .slide {display:none;}
+    .slideshow-container img {
+        width:100%; height:350px; object-fit:cover; border-radius:12px;
+        box-shadow:0 0 10px #9fd3e6;
+    }
+
+    /* Dots (optional) */
+    .dots {text-align:center; margin-top:10px;}
+    .dot {
+        height:12px; width:12px; margin:0 4px; background:#9fd3e6;
+        border-radius:50%; display:inline-block; opacity:0.4;
+    }
+    .active {opacity:1;}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="memories.html">Memories</a>
+<a href="promises.html">Promises</a>
+<a href="playlist.html">Playlist</a>
+</nav>
+
+<h2>Dates I’ll Never Forget</h2>
+<div class="dates">
+    <div class="date-item"><strong>01 June 2024</strong><br>When we talked for hours and time disappeared.</div>
+    <div class="date-item"><strong>18 August 2024</strong><br>Your hand found mine — and nothing felt safer.</div>
+    <div class="date-item"><strong>10 November 2024</strong><br>The moment I knew my heart already belonged to you.</div>
+</div>
+
+<h2 style="margin-top:40px;">Little Pieces of Us</h2>
+
+<!-- AUTO SLIDESHOW -->
+<div class="slideshow-container">
+    <div class="slide"><img src="https://via.placeholder.com/800x500"></div>
+    <div class="slide"><img src="https://via.placeholder.com/800x500/ffcccc"></div>
+    <div class="slide"><img src="https://via.placeholder.com/800x500/ccffee"></div>
+</div>
+
+<div class="dots">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+
+    for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+    slideIndex++;
+    if (slideIndex > slides.length) slideIndex = 1;
+
+    for (let i = 0; i < dots.length; i++) dots[i].classList.remove("active");
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.add("active");
+
+    setTimeout(showSlides, 3000); // change every 3 seconds
+}
+</script>
+
+</body>
+</html>
