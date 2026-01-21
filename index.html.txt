@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You, My Love</title>
+<style>
+    body {font-family: 'Poppins', sans-serif; background:#f6e7ff; margin:0; color:#3a2d4f;}
+    nav {background:#fff; padding:15px; text-align:center; box-shadow:0 0 8px #c6b0e6;}
+    nav a {margin:0 15px; text-decoration:none; font-weight:600; color:#3a2d4f;}
+    header {text-align:center; padding:50px 20px;}
+    h1 {font-size:40px;}
+    p {max-width:700px; margin:10px auto; font-size:18px; line-height:1.6;}
+    footer {text-align:center; padding:20px; margin-top:30px;}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="memories.html">Memories</a>
+<a href="promises.html">Promises</a>
+<a href="playlist.html">Playlist</a>
+</nav>
+
+<header>
+<h1>For you BABA ♡</h1>
+<p>Tujhe sry bolna tha but esehi nhi, special feel krwa ke jaise tu mujhe hamesha krta h...</p>
+<p>I really really hope tujhe mere life ka pehla website acha lage</p>
+</header>
+
+<footer>Made pura khudse and dilse only for you ♡</footer>
+</body>
+</html>
